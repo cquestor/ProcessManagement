@@ -23,8 +23,8 @@
 ---|---|---
 id|int(11)|id(自增)(主键)
 name|varchar(60)|公司名称(非空)
-create_person|int(11)|建立者(非空)(外键)
 create_time|date|建立时间(非空)
+create_person|int(11)|建立者(非空)(外键)
 
 #### 部门
 
@@ -43,7 +43,7 @@ name|varchar(15)|员工姓名(非空)
 age|int(2)|年龄(非空)
 entry_time|date|入职时间(非空)
 company_id|int(11)|所属公司(非空)(外键)
-department_time|int(11)|所属部门(非空)(外键)
+department_id|int(11)|所属部门(非空)(外键)
 
 #### 负责人关系
 
@@ -51,4 +51,9 @@ department_time|int(11)|所属部门(非空)(外键)
 ---|---|---
 id|int(11)|id(自增)(主键)
 person_id|int(11)|员工编号(非空)(外键)
-department_time|int(11)|管理部门(非空)(外键)
+department_id|int(11)|管理部门(非空)(外键)
+
+![](.\draws\人事管理.png)
+
+
+
